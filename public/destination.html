@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travor - Destinations</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="destination.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.png" alt="Travor Logo">
+        <span>Travor</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="destination.html" class="active">Destination</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="login-btn">
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Destination Hero Section -->
+  <section class="destination-hero">
+    <div class="container">
+      <div class="destination-hero-content">
+        <h1>Explore <span>Destinations</span></h1>
+        <p>Discover amazing places around the world and create unforgettable memories.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destination Search Section -->
+  <section class="destination-search">
+    <div class="container">
+      <div class="search-container">
+        <div class="search-item">
+          <label>Location <i class="fas fa-chevron-down"></i></label>
+          <input type="text" placeholder="Where do you want to go?">
+        </div>
+        <div class="search-item">
+          <label>Type <i class="fas fa-chevron-down"></i></label>
+          <select>
+            <option value="">All Types</option>
+            <option value="beach">Beach</option>
+            <option value="mountain">Mountain</option>
+            <option value="city">City</option>
+            <option value="countryside">Countryside</option>
+          </select>
+        </div>
+        <div class="search-item">
+          <label>Price Range <i class="fas fa-chevron-down"></i></label>
+          <select>
+            <option value="">Any Price</option>
+            <option value="budget">Budget</option>
+            <option value="moderate">Moderate</option>
+            <option value="luxury">Luxury</option>
+          </select>
+        </div>
+        <button class="btn-primary">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Destinations Section -->
+  <section class="featured-destinations">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Top Picks</span>
+        <h2>Featured Destinations</h2>
+        <p>Explore our handpicked selection of the most amazing destinations around the world.</p>
+      </div>
+      
+      <div class="destination-grid">
+        <div class="destination-card featured">
+          <div class="destination-image">
+            <img src="images/A.jpg" alt="Bali, Indonesia">
+            <div class="destination-badge">Featured</div>
+          </div>
+          <div class="destination-content">
+            <div class="destination-details">
+              <h3>Bali, Indonesia</h3>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <span>4.9</span>
+              </div>
+            </div>
+            <p>Experience the perfect blend of beautiful beaches, vibrant culture, and spiritual awakening.</p>
+            <div class="destination-meta">
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Indonesia</span>
+              </div>
+              <div class="price">
+                <span class="from">From</span>
+                <span class="amount">$1,200</span>
+              </div>
+            </div>
+            <a href="#" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+        
+        <div class="destination-card">
+          <div class="destination-image">
+            <img src="images/B.jpg" alt="Santorini, Greece">
+          </div>
+          <div class="destination-content">
+            <div class="destination-details">
+              <h3>Santorini, Greece</h3>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <span>4.8</span>
+              </div>
+            </div>
+            <p>Discover the iconic white buildings, blue domes, and breathtaking sunsets.</p>
+            <div class="destination-meta">
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Greece</span>
+              </div>
+              <div class="price">
+                <span class="from">From</span>
+                <span class="amount">$950</span>
+              </div>
+            </div>
+            <a href="#" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+        
+        <div class="destination-card">
+          <div class="destination-image">
+            <img src="images/c.webp" alt="Dubai, UAE">
+          </div>
+          <div class="destination-content">
+            <div class="destination-details">
+              <h3>Dubai, UAE</h3>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <span>4.7</span>
+              </div>
+            </div>
+            <p>Experience luxury shopping, modern architecture, and desert adventures.</p>
+            <div class="destination-meta">
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>United Arab Emirates</span>
+              </div>
+              <div class="price">
+                <span class="from">From</span>
+                <span class="amount">$1,100</span>
+              </div>
+            </div>
+            <a href="#" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+        
+        <div class="destination-card">
+          <div class="destination-image">
+            <img src="images/d.webp" alt="Kyoto, Japan">
+          </div>
+          <div class="destination-content">
+            <div class="destination-details">
+              <h3>Kyoto, Japan</h3>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <span>4.8</span>
+              </div>
+            </div>
+            <p>Immerse yourself in Japanese culture with ancient temples and beautiful gardens.</p>
+            <div class="destination-meta">
+              <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Japan</span>
+              </div>
+              <div class="price">
+                <span class="from">From</span>
+                <span class="amount">$1,350</span>
+              </div>
+            </div>
+            <a href="#" class="btn-secondary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destination Categories Section -->
+  <section class="destination-categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Explore By Type</span>
+        <h2>Destination Categories</h2>
+        <p>Find your perfect destination based on your travel preferences.</p>
+      </div>
+      
+      <div class="categories-container">
+        <div class="category-card">
+          <div class="category-image">
+            <img src="images/A.jpg" alt="Beach Destinations">
+            <div class="category-overlay"></div>
+          </div>
+          <div class="category-content">
+            <h3>Beach Destinations</h3>
+            <p>15 Destinations</p>
+            <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-image">
+            <img src="images/B.jpg" alt="Mountain Destinations">
+            <div class="category-overlay"></div>
+          </div>
+          <div class="category-content">
+            <h3>Mountain Destinations</h3>
+            <p>12 Destinations</p>
+            <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-image">
+            <img src="images/c.webp" alt="City Destinations">
+            <div class="category-overlay"></div>
+          </div>
+          <div class="category-content">
+            <h3>City Destinations</h3>
+            <p>20 Destinations</p>
+            <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-image">
+            <img src="images/d.webp" alt="Countryside Destinations">
+            <div class="category-overlay"></div>
+          </div>
+          <div class="category-content">
+            <h3>Countryside Destinations</h3>
+            <p>8 Destinations</p>
+            <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="destination-map">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Global Reach</span>
+        <h2>Destinations Around the World</h2>
+        <p>Explore our destinations across the globe and find your next adventure.</p>
+      </div>
+      
+      <div class="map-container">
+        <div class="map-placeholder">
+          <img src="images/B.jpg" alt="World Map with Destinations">
+          <div class="map-point" style="top: 35%; left: 20%;" data-location="Paris, France"></div>
+          <div class="map-point" style="top: 40%; left: 50%;" data-location="Dubai, UAE"></div>
+          <div class="map-point" style="top: 45%; left: 80%;" data-location="Tokyo, Japan"></div>
+          <div class="map-point" style="top: 60%; left: 30%;" data-location="Rio de Janeiro, Brazil"></div>
+          <div class="map-point" style="top: 25%; left: 15%;" data-location="New York, USA"></div>
+        </div>
+        <div class="map-tooltip">
+          <span class="tooltip-location">Location Name</span>
+          <a href="#" class="tooltip-link">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Subscribe and get exclusive deals on destinations</h2>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Enter your mail">
+          <button class="btn-primary">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Travor Logo">
+          <span>Travor</span>
+          <p>Book your trip in minute, get full Control for much longer.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="link-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Logistic</a></li>
+              <li><a href="#">Privacy & Policy</a></li>
+            </ul>
+          </div>
+          <div class="link-column">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="#">Help/FAQ</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Affiliates</a></li>
+            </ul>
+          </div>
+          <div class="link-column">
+            <h3>More</h3>
+            <ul>
+              <li><a href="#">Press Centre</a></li>
+              <li><a href="#">Our Blog</a></li>
+              <li><a href="#">Low fare tips</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright, Travor 2022. All rights reserved.</p>
+        <p>Terms & Conditions</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="destination.js"></script>
+</body>
+</html>

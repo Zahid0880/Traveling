@@ -1,0 +1,449 @@
+/* About Page Specific Styles */
+
+/* Hero Section */
+.about-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/placeholder.svg?height=600&width=1200");
+  background-size: cover;
+  background-position: center;
+  padding: 180px 0 100px;
+  text-align: center;
+  color: var(--white);
+}
+
+.about-hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.about-hero-content h1 span {
+  color: var(--primary-color);
+}
+
+.about-hero-content p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Our Story Section */
+.our-story {
+  padding: 100px 0;
+}
+
+.story-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.story-image {
+  flex: 0 0 45%;
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.story-content {
+  flex: 1;
+}
+
+.story-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.story-content p {
+  color: var(--light-text);
+  margin-bottom: 20px;
+}
+
+/* Our Mission Section */
+.our-mission {
+  padding: 100px 0;
+  background-color: var(--light-bg);
+}
+
+.mission-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.mission-content {
+  flex: 1;
+}
+
+.mission-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.mission-content p {
+  color: var(--light-text);
+  margin-bottom: 30px;
+}
+
+.mission-image {
+  flex: 0 0 45%;
+}
+
+.mission-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.mission-values {
+  margin-top: 30px;
+}
+
+.value-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.value-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #fff4ee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.value-icon i {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.value-text h3 {
+  margin-bottom: 5px;
+}
+
+.value-text p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+/* Team Section */
+.our-team {
+  padding: 100px 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.team-member {
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.member-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.team-member:hover .member-image img {
+  transform: scale(1.1);
+}
+
+.member-social {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 0;
+  background-color: rgba(255, 125, 30, 0.9);
+  transition: bottom 0.3s ease;
+}
+
+.team-member:hover .member-social {
+  bottom: 0;
+}
+
+.member-social a {
+  width: 30px;
+  height: 30px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.member-social a:hover {
+  background-color: var(--text-color);
+  color: var(--white);
+}
+
+.member-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.member-info h3 {
+  margin-bottom: 5px;
+}
+
+.member-role {
+  display: block;
+  color: var(--primary-color);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.member-info p {
+  color: var(--light-text);
+  font-size: 14px;
+}
+
+/* Achievements Section */
+.achievements {
+  padding: 100px 0;
+  background-color: var(--light-bg);
+}
+
+.achievements-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.achievement-item {
+  text-align: center;
+  background-color: var(--white);
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+  transform: translateY(-10px);
+}
+
+.achievement-icon {
+  width: 70px;
+  height: 70px;
+  background-color: #fff4ee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  transition: all 0.3s ease;
+}
+
+.achievement-item:hover .achievement-icon {
+  background-color: var(--primary-color);
+}
+
+.achievement-icon i {
+  font-size: 28px;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.achievement-item:hover .achievement-icon i {
+  color: var(--white);
+}
+
+.achievement-number {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.achievement-text {
+  color: var(--light-text);
+  font-weight: 500;
+}
+
+/* Contact Section */
+.contact-us {
+  padding: 100px 0;
+}
+
+.contact-container {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.contact-info {
+  flex: 0 0 40%;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #fff4ee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.contact-icon i {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.contact-text h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.contact-text p {
+  color: var(--light-text);
+  line-height: 1.8;
+}
+
+.contact-social {
+  margin-top: 40px;
+}
+
+.contact-social h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.contact-social .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-form {
+  flex: 1;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.contact-form .btn-primary {
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .story-container,
+  .mission-container {
+    flex-direction: column;
+  }
+
+  .story-image,
+  .mission-image {
+    order: -1;
+    margin-bottom: 30px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievements-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievement-item {
+    flex: 0 0 calc(50% - 15px);
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievements-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero-content h1 {
+    font-size: 28px;
+  }
+
+  .story-content h2,
+  .mission-content h2 {
+    font-size: 26px;
+  }
+
+  .achievements-container {
+    grid-template-columns: 1fr;
+  }
+}
